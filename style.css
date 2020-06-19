@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.logo a {
+  background: #f42;
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  padding: 16px 20px;
+  width: 106px;
+  display: block;
+}
+
+.nav-links-right a {
+  display: block;
+  padding: 16px;
+}
+
+.nav-links-right li {
+  display: inline-block;
+  border-left: 1px solid #eee;
+}
+
+.nav-links-right img {
+  height: 16px;
+  width: 16px;
+}
