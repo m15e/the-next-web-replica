@@ -93,7 +93,8 @@ nav {
 @media screen and (min-width : 768px) {
   .top-links {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 8rem);
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 3rem);
   }
 
   .logo {
@@ -172,4 +173,13 @@ nav {
     grid-column-end: -4;
   } 
 
+}
+
+@media screen and (min-width : 1024px) {
+  .logo {
+    display: none;
+  }
+  .nav-container {
+    width: 100%;
+  }
 }
