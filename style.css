@@ -123,7 +123,7 @@ nav {
 
   .nav-links-right {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 4rem);
+    grid-template-columns: repeat(auto-fill, 8rem);
   }
 
   .nav-links-right .search-link {
@@ -143,7 +143,7 @@ nav {
     display: inline-block;
   }
 
-  .nav-links-right li:last-of-type {
+  .mobile-menu {
     display: none;
   }
 
