@@ -256,6 +256,35 @@ nav {
   opacity: 0.6;
 }
 
+.latest-news {
+  margin: 30px 20px 20px;
+}
+
+.newses {
+  display: flex;
+}
+
+.news-item {
+  display: flex;
+}
+
+.news-item img {
+  display: none;
+}
+.news-item:nth-of-type(1) >a {
+  background: url(./assets/ln1.png) no-repeat;
+  background-size: cover;
+}
+.news-item:nth-of-type(2) >a {
+  background: url(./assets/ln2.png) no-repeat;
+  background-size: cover;
+}
+.news-item > a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (min-width : 768px) {
   .logo {
     height: 80px;
