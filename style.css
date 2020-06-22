@@ -200,11 +200,13 @@ nav {
 
 .feature header ul {
   display: flex;
+  margin-top: 5px;
 }
 
 .feature header ul img {
   width: 16px;
   height: 16px;
+  margin-right: 3px;
 }
 
 .feature header li,
@@ -217,6 +219,14 @@ nav {
 
 .feature header li a:hover {
   color: white;
+}
+
+.feature header li {
+  margin-right: 7px;
+}
+
+.feature header li>span {
+  margin-right: 3px;
 }
 
 .featured-articles article {
@@ -306,6 +316,20 @@ nav {
   .tnw-bottom-right {
     grid-area: tnw-bottom-right;
   }
+
+  .feature header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .feature header h5 {
+    font-weight: 500;
+  }
+
+  .feature header ul {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width : 780px) {
@@ -339,6 +363,25 @@ nav {
   .notice-banner {
     justify-content: flex-start;
     padding-left: 20px;
+  }
+
+  .feature header h2 {
+    font-size: 56px;
+    font-weight: 700;
+  }
+
+  .feature header ul {
+    margin-top: 20px;
+  }
+
+  .cover-bg {
+    position: absolute;
+    transition: background-color .4s ease;
+    /* background: rgba(0,0,0,.25) url(./assets/image-gradient.png) no-repeat; */
+    background: transparent url(./assets/cover-gradient.png) no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
   }
 }
 
