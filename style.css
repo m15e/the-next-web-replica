@@ -159,12 +159,12 @@ nav {
 }
 
 .tnw-top-right {
-  border: 1px solid pink;
+  background-color: pink;
   height: 20px;
 }
 
 .tnw-bottom-right {
-  border: 1px solid blue;
+  background-color: blue;
   height: 20px;
 }
 
@@ -232,6 +232,7 @@ nav {
 .featured-articles article {
   min-height: 30vh;
   position: relative;
+  margin: 7px;
 }
 
 .featured-articles .img-bg {
@@ -245,7 +246,7 @@ nav {
 .gradient-bg {
   position: absolute;
   transition: background-color .4s ease;
-  background: rgba(0,0,0,.25) url(./assets/image-gradient.png) no-repeat;
+  background: rgba(0,0,0,.25) url('./assets/image-gradient.png') no-repeat;
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
@@ -294,10 +295,18 @@ nav {
     display: none;
   }
 
+  .featured-articles article {
+    margin: 0;
+    margin-right: 3px;
+  }
+
   .featured-articles {
+    margin-top: 3px;
+    margin-left: 3px;
     display: grid;
     padding-top: 110px;
     width: 100%;
+    gap: 5px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "feature tnw-top-right"
@@ -368,20 +377,36 @@ nav {
   .feature header h2 {
     font-size: 56px;
     font-weight: 700;
+    margin-top: 10px
   }
 
   .feature header ul {
     margin-top: 20px;
   }
 
-  .cover-bg {
+  .gradient-bg {
     position: absolute;
-    transition: background-color .4s ease;
-    /* background: rgba(0,0,0,.25) url(./assets/image-gradient.png) no-repeat; */
-    background: transparent url(./assets/cover-gradient.png) no-repeat;
+    transition: background-color .4s ease;    
+    background: url('assets/cover-gradient.png') 0 0 no-repeat, rgba(0,0,0,.25) url('assets/image-gradient.png') 0 0 no-repeat;
     background-size: 100% 100%;
     height: 100%;
     width: 100%;
+  }
+
+  .article-logo {
+    position: absolute;
+    margin: 20px;
+    width: 50%;
+    height: 100%;
+    background: url('assets/tnw.svg') no-repeat;   
+  }
+
+  .article-date {
+    position: absolute;
+    top: 20px;
+    display: block;
+    color: #fff;
+    right: 20px;
   }
 }
 
