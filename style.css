@@ -306,7 +306,7 @@ nav {
   font-size: 13px;
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
 
   .news-item img {
     visibility: hidden;
@@ -421,13 +421,15 @@ nav {
   }
 
   .latest-news > div {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
   }
 
   .news-item {
     padding: 10px;
     display: block;
+    width: 100;
   }
 
   .news-item > a img {
@@ -504,6 +506,10 @@ nav {
     display: block;
     color: #fff;
     right: 20px;
+  }
+
+  .latest-news > div {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
