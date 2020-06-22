@@ -257,32 +257,83 @@ nav {
 }
 
 .latest-news {
-  margin: 30px 20px 20px;
+  margin: 10vh 20px 20px;
 }
 
-.newses {
-  display: flex;
+.latest-news h2 {
+  margin-bottom: 24px;
+} 
+
+.latest-news > h2 a {
+  color: #f42;  
+  font-size: 28px;
 }
 
 .news-item {
   display: flex;
+  margin-bottom: 10px;
 }
 
-.news-item img {
-  display: none;
-}
-.news-item:nth-of-type(1) >a {
-  background: url(./assets/ln1.png) no-repeat;
-  background-size: cover;
-}
-.news-item:nth-of-type(2) >a {
-  background: url(./assets/ln2.png) no-repeat;
-  background-size: cover;
-}
 .news-item > a {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+}
+
+.news-description {
+  margin-left: 10px;
+}
+
+.news-description > a {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.news-description ul {
+  display: flex;
+}
+
+.news-description ul li:first-of-type::after {
+  content: "\B7";
+  display: block;
+  float: right;
+  margin: 0 4px;
+}
+
+.news-description ul li,
+.news-description ul li a {
+  color: #aaa;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768) {
+
+  .news-item img {
+    visibility: hidden;
+    width: 75px;
+    height: 75px;
+    display: block;
+  }
+
+  .news-item:nth-of-type(1) > a {
+    background: url(./assets/ln1.png) no-repeat;
+    background-size: cover;
+  }
+  
+  .news-item:nth-of-type(2) > a {
+    background: url(./assets/ln2.jpg) no-repeat;
+    background-size: cover;
+  }
+  
+  .news-item:nth-of-type(3) > a {
+    background: url(./assets/ln3.png) no-repeat;
+    background-size: cover;
+  }
+
+  .news-item:nth-of-type(4) > a {
+    background: url(./assets/ln4.png) no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width : 768px) {
@@ -367,6 +418,23 @@ nav {
 
   .feature header ul {
     margin-top: 10px;
+  }
+
+  .latest-news > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news-item {
+    padding: 10px;
+    display: block;
+  }
+
+  .news-item > a img {
+    display: block;
+    visibility: initial;
+    width: 100%;
+    height: auto;
   }
 }
 
