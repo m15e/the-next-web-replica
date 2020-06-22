@@ -152,6 +152,26 @@ nav {
   font-size: 0.8rem;
 }
 
+.tnw {
+  padding-top: 96px;
+}
+
+.insights {
+  border: 1px solid yellow;
+  height: 40px;
+}
+
+.tnw-top-right {
+  border: 1px solid pink;
+  height: 20px;
+}
+
+.tnw-bottom-right {
+  border: 1px solid blue;
+  height: 20px;
+}
+
+
 @media screen and (min-width : 768px) {
 
   .logo {
@@ -189,6 +209,28 @@ nav {
 
   .mobile-menu {
     display: none;
+  }
+
+  .tnw {
+    display: grid;
+    padding-top: 110px;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "insights tnw-top-right"
+                         "insights tnw-bottom-right";
+  }
+
+  .insights {
+    grid-area: insights;
+  }
+  
+  .tnw-top-right {
+    grid-area: tnw-top-right;
+  }
+
+  .tnw-bottom-right {
+    grid-area: tnw-bottom-right;
   }
 }
 
