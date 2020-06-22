@@ -130,10 +130,6 @@ nav {
   margin-left: 20px;
 }
 
- {
-  padding-right: 20px;
-}
-
 .top-links li {
   margin-right: 12px;
 }
@@ -220,15 +216,22 @@ nav {
     display: none;
   }
 
-  .eco-countdown,
   .main-nav-container {
     display: flex;
   }
   
+  .notice-banner {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width : 1113px) {
   .eco-countdown {
+    display: flex;
     min-width: 47%;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 4px;
+    margin-right: 14px;
   }
 }
