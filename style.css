@@ -36,10 +36,17 @@ nav {
 .nav-links-right a {
   display: block;
   padding: 16px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .nav-links-right li { 
   max-height: 48px;
+}
+
+.nav-links-right li:first-of-type a {
+  padding-left: 20px;
 }
 
 .mobile-link {
@@ -78,11 +85,60 @@ nav {
   display: none;
 }
 
+.eco-search {
+  margin: 16px;
+  transform: rotate(-270deg);
+  opacity: 0.25;  
+}
+
+.eco-logo {
+  width: 200px;
+  vertical-align: middle;
+}
+
+.eco-countdown a:first-of-type {
+  border-left: 1px solid #eee;
+}
+
+.eco-countdown span:first-of-type {
+  margin: 0 4px 0;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.eco-countdown .timer {
+  color: #f42;
+  font-size: 21px;
+  margin: 0 14px 0 4px;
+}
+
+.eco-countdown a:last-of-type {
+  font-size: 11px;
+  background-color: #0cc;
+  color: #fff;
+  line-height: 28px;
+  padding: 0 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
 .expanded-nav a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.expanded-nav li {
+.top-links {
+  margin-left: 20px;
+}
+
+ {
+  padding-right: 20px;
+}
+
+.top-links li {
+  margin-right: 12px;
+}
+
+.top-right-links li {
   margin-left: 12px;
 }
 
@@ -143,6 +199,7 @@ nav {
 @media screen and (min-width : 780px) {
   .top-right-links {
     float: right;
+    padding-right: 20px;
   }
 
   .search-link {
@@ -171,5 +228,7 @@ nav {
   .eco-countdown {
     min-width: 47%;
     align-items: center;
+    justify-content: flex-end;
+    margin-right: 4px;
   }
 }
