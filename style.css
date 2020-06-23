@@ -648,6 +648,82 @@ nav {
   color: #000;
 }
 
+.footer-top {
+  width: 100%;
+  text-align: center;
+  background-color: #131313;
+}
+
+.footer-top ul:first-of-type {
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-top ul:nth-of-type(2) {
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+}
+
+.footer-top > ul li {
+  display: inline-block;
+}
+
+.footer-top > ul:first-of-type a {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  border-radius: 100%;
+  border: 2px solid #333;
+}
+
+.footer-top > ul:nth-of-type(2) li {
+  padding: 3px;
+}
+
+.footer-top > ul:nth-of-type(2) a {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.footer-top > ul:first-of-type a:hover {
+  background-color: #000;
+}
+
+.footer-top > ul:nth-of-type(2) a:hover {
+  color: white;
+}
+
+.footer-top > ul:first-of-type img {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  background-color: black;
+  text-align: center;
+}
+
+.footer-svg {
+  height: 9px;
+}
+
+.footer-bottom span {
+  display: inline-block;
+  color: #aaa;
+  width: 40%;
+  margin: 2rem 0;
+}
+
+.footer-bottom b {
+  color: #f42;
+}
+
 @media screen and (min-width : 768px) {
   .logo {
     height: 80px;
@@ -784,6 +860,10 @@ nav {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom span {
+    width: 100%;
   }
 }
 
