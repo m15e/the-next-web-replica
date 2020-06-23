@@ -250,8 +250,7 @@ nav {
   width: 100%;
 }
 
-.gradient-bg,
-.gradient-sections {
+.gradient-bg {
   position: absolute;
   transition: background-color .4s ease;
   background: rgba(0,0,0,.25) url('./assets/image-gradient.png') no-repeat;
@@ -314,11 +313,12 @@ nav {
   display: inline-block;
 }
 
-.news-description ul {
+.news-description ul, .link-body ul {
   display: flex;
 }
 
-.news-description ul li:first-of-type::after {
+.news-description ul li:first-of-type::after,
+.link-body li:first-of-type:after {
   content: "\B7";
   display: block;
   float: right;
@@ -326,7 +326,9 @@ nav {
 }
 
 .news-description ul li,
-.news-description ul li a {
+.news-description ul li a,
+.link-body li span, 
+.link-body li a {
   color: #aaa;
   font-size: 13px;
 }
@@ -470,21 +472,102 @@ nav {
   color: #aaa;
 }
 
-.link-body {
-  width: 100%;
-  height: 400px;
-  background: url(./assets/apps.png) no-repeat;
-  background: rgba(0,0,0,.25) url('./assets/image-gradient.png') no-repeat;
-  z-index: 2;
+.sections {
+  padding: 20px;
+  padding-bottom: 40vh;
 }
 
-.gradient-bg {
+.link-body {
+  width: 100%;
+  height: 345px;  
+  background: url("./assets/apps.png") no-repeat, rgba(121, 101, 101, 0.25) url('./assets/image-gradient.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.link-body header {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.link-body header * {
+  color: #fff;
+}
+
+.link-body header h5 {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.link-body header h3 {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.link-gradient {
   position: absolute;
   transition: background-color .4s ease;
-  background: rgba(0,0,0,.25) url('./assets/image-gradient.png') no-repeat;
+  background: rgba(0,0,0,.4) url('./assets/image-gradient.png') no-repeat;
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
+}
+
+.latest {
+  background-color: rgba(255,68,34,.06);
+  min-height: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest div {
+  padding: 12px 16px;
+  max-width: 70%;
+}
+
+.latest div > a,
+.latest h5 {
+  color: #f42;
+}
+
+.latest h5 {
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.latest > a {
+  width: 96px;
+  height: 96px;
+  display: inline-block;
+  background-color: #0cc; /*TODO set bg image*/
+}
+
+.link-list {
+  margin-left: 20px;
+}
+
+.link-list li {
+  padding: 6px 0 6px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.link-list li::before {
+  content: "\2022";  
+  color: #f42;   
+  display: inline-block; 
+  width: 1em; 
+  font-size: 12px;
+  margin-left: -2.8em; 
+}
+
+.link-list li a {
+  color: #555;
+  font-size: 14px;
+}
+
+.link-list li a:hover {
+  color: #000;
 }
 
 @media screen and (min-width : 768px) {
