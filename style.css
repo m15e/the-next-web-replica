@@ -369,6 +369,9 @@ nav {
   background: url(./assets/ln8.jpg) no-repeat;
 }
 
+.heading-links ul li a:hover {
+  color: black;
+}
 
 @media screen and (min-width : 768px) {
   .logo {
@@ -474,6 +477,29 @@ nav {
   .news-description {
     margin: 10px 0;
   }
+
+  .heading-links ul {
+    display: flex;
+  }
+
+  .heading-links ul li a {
+    font-size: 16px;
+  }
+
+  .heading-links ul > li:not(:last-child) {
+    border-right: 1px solid #f42;
+    padding-right: 8px;
+  }
+
+  .heading-links ul > li:not(:first-child) {
+    margin-left: 8px;
+  }
+
+  .heading-links h2 {
+    margin-bottom: 0;
+  }
+
+
 }
 
 @media screen and (min-width : 780px) {
@@ -561,6 +587,11 @@ nav {
   .news-description ul li, 
   .news-description ul li a {
     line-height: 20px;
+  }
+
+  .heading-links {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
