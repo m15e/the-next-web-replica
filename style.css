@@ -519,6 +519,7 @@ nav {
   min-height: 96px;
   display: flex;
   justify-content: space-between;
+  padding-top: 2px;
 }
 
 .latest div {
@@ -540,8 +541,34 @@ nav {
   width: 96px;
   height: 96px;
   display: inline-block;
-  background-color: #0cc; /*TODO set bg image*/
+  background-position: 50%;
+  background-size: cover;
 }
+
+.latest-img-1 {
+  background: url(./assets/latest1.png) no-repeat;
+}
+
+.latest-img-3 {
+  background: url(./assets/latest3.png) no-repeat;
+}
+
+.latest-img-4 {
+  background: url(./assets/latest4.png) no-repeat;
+}
+.latest-img-5 {
+  background: url(./assets/latest5.png) no-repeat;
+}
+.latest-img-6 {
+  background: url(./assets/latest6.png) no-repeat;
+}
+.latest-img-7 {
+  background: url(./assets/latest7.png) no-repeat;
+}
+.latest-img-8 {
+  background: url(./assets/latest8.png) no-repeat;
+}
+
 
 .link-list {
   margin-left: 20px;
@@ -705,6 +732,12 @@ nav {
   .funding-item:last-of-type {
     display: none;
   }
+
+  .sections {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width : 780px) {
@@ -807,6 +840,11 @@ nav {
 
   .funding-item:last-of-type {
     display: block;
+  }
+
+  .sections {
+    padding: 7%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
