@@ -373,6 +373,35 @@ nav {
   color: black;
 }
 
+.funding-item-upper-head {
+  background-color: #f42;
+  color: white;
+}
+
+.funding-item-lower-head {
+  background-color: rgb(255, 235, 231);
+}
+
+.funding-item-lower-head h2 {
+  color: black;
+}
+
+.funding-item-lower-head h5 {
+  color: #555;
+}
+
+
+.funding-item > a {
+  display: inline-block;
+  width: 100%;
+}
+
+.funding-item-upper-head,
+.funding-item-lower-head  {
+  padding-left: 90px;
+}
+
+
 @media screen and (min-width : 768px) {
   .logo {
     height: 80px;
