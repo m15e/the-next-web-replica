@@ -556,19 +556,22 @@ nav {
 .latest-img-4 {
   background: url(./assets/latest4.png) no-repeat;
 }
+
 .latest-img-5 {
   background: url(./assets/latest5.png) no-repeat;
 }
+
 .latest-img-6 {
-  background: url(./assets/latest6.png) no-repeat;
-}
-.latest-img-7 {
-  background: url(./assets/latest7.png) no-repeat;
-}
-.latest-img-8 {
-  background: url(./assets/latest8.png) no-repeat;
+  background: url(./assets/latest6.jpg) no-repeat;
 }
 
+.latest-img-7 {
+  background: url(./assets/latest7.jpg) no-repeat;
+}
+
+.latest-img-8 {
+  background: url(./assets/latest8.jpg) no-repeat;
+}
 
 .link-list {
   margin-left: 20px;
@@ -717,10 +720,6 @@ nav {
 
   .heading-links ul > li:not(:first-child) {
     margin-left: 8px;
-  }
-
-  .heading-links h2 {
-    margin-bottom: 0;
   }
 
   .funding-items {
