@@ -335,7 +335,7 @@ nav {
 
 .news-item > a {
   display: inline-block;
-  width: 75px;
+  width: 84.5px;
   height: 75px;
   background-size: cover;
 }
@@ -597,6 +597,54 @@ nav {
 }
 
 .link-list li a:hover {
+  color: #000;
+}
+
+.latest-deals li::after {
+  visibility: hidden;
+}
+
+.latest-deals li:nth-of-type(1) {
+  text-decoration: line-through;
+}
+
+.latest-deals li:nth-of-type(2) {
+  color: #555;
+  margin-left: -5px;
+}
+
+.latest-deals .news-item a {
+  position: relative;
+}
+
+.latest-deals .deal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 80px;
+  width: 80px;
+  background: url(./assets/deal.svg);
+}
+
+.latest-deals .bundle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  transform: rotate(180deg);
+  width: 80px;
+  background: url(./assets/blue-deal.svg);
+}
+
+.deal span {
+  display: inline-block;
+  transform: rotate(45deg);
+  position: relative;
+  top: 22px;
+  left: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
   color: #000;
 }
 
