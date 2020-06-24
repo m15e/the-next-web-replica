@@ -539,6 +539,17 @@ nav {
   font-size: 0.8rem;
 }
 
+.footer-top > ul:first-of-type a {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  border-radius: 100%;
+  border: 2px solid #333;
+}
+
 .feature header li a:hover {
   color: white;
 }
