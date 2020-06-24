@@ -1,10 +1,10 @@
-# Smashing Magazine Replica
+# The Next Web Replica
 
-> One paragraph statement about the project.
+> A clone of the TNW homepage.
 
 ![screenshot](./assets/tnw_screenshot.png)
 
-Additional description about the project and its features.
+A project to practice HTML, CSS and responsive design.
 
 ## Live Demo
 
