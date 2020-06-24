@@ -201,8 +201,16 @@ nav ul a {
   height: 20px;
 }
 
-.feature .img-bg {
+.img-bg {
   background-image: url(./assets/office-1.png);
+}
+
+.tnw1-bg {
+  background-image: url(./assets/cc_series.jpg);
+}
+
+.tnw2-bg {
+  background-image: url(./assets/ln6.jpg);
 }
 
 .feature header {
@@ -251,6 +259,14 @@ nav ul a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.tnw-top-right header li a {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: hsla(0,0%,100%,.6);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .feature header li a:hover {
   color: white;
 }
@@ -272,6 +288,14 @@ nav ul a {
 .featured-articles .img-bg {
   position: absolute;
   background: url('assets/office-1.png');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.tnw1-bg,
+.tnw2-bg {
+  position: absolute;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -848,6 +872,11 @@ nav ul a {
     font-weight: 700;
     line-height: 1;
   }
+
+  .tnw-top-right header h2,
+  .tnw-bottom-right header h2 {
+    font-size: 20px;
+  }
   
   .feature header h5 {
     font-weight: 500;
@@ -964,8 +993,17 @@ nav ul a {
     margin-top: 10px
   }
 
+  .tnw-top-right header h2,
+  .tnw-bottom-right header h2 {
+    font-size: 30px;
+  }
+
   .feature header ul {
     margin-top: 20px;
+  }
+
+  .featured-articles article {
+    min-height: 35vh;
   }
 
   .gradient-bg {
