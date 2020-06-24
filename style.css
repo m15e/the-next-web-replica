@@ -152,17 +152,19 @@ nav ul a {
 .eco-countdown .timer {
   color: #f42;
   font-size: 21px;
-  margin: 0 14px 0 4px;
+  margin: 0 14px 2px 4px;
 }
 
 .eco-countdown a:last-of-type {
-  font-size: 11px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
   background-color: #0cc;
   color: #fff;
   line-height: 28px;
   padding: 0 12px;
   border-radius: 3px;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 
 .expanded-nav a {
@@ -332,6 +334,16 @@ nav ul a {
 
 .heading-links a {
   color: #f42;  
+}
+
+.news-description a:hover {
+  color: #f42;
+  text-decoration: underline;
+  text-decoration-color: rgba(244, 32, 0, 0.2);
+}
+
+.heading-links a:hover {
+  color: #000;
 }
 
 .heading-links > h2 a {  
@@ -706,6 +718,18 @@ nav ul a {
   color: #000;
 }
 
+.latest-deals .heading-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-deals .heading-links a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
 .latest-deals li::after {
   visibility: hidden;
 }
@@ -876,11 +900,17 @@ nav ul a {
   max-height: 65%;
 }
 
+
+
 @media screen and (max-width : 768px) {
   .deal,
   .bundle,
   .bundle+p {
     display: none;
+  }
+  
+  .news-item > a {
+    background-size: 20%;
   }
 }
 
@@ -933,7 +963,6 @@ nav ul a {
   }
 
   .featured-articles {
-    margin-left: 3px;
     display: grid;
     padding-top: 110px;
     width: 100%;
@@ -947,6 +976,10 @@ nav ul a {
   .feature {
     grid-area: feature;
     position: relative;
+  }
+
+  .feature:hover {
+    cursor: pointer;
   }
   
   .tnw-top-right {
@@ -976,7 +1009,7 @@ nav ul a {
     margin-top: 10px;
   }
 
-  .latest-news > div {
+  .latest-news > div:nth-of-type(2) {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
@@ -1139,13 +1172,16 @@ nav ul a {
     display: block;
     color: #fff;
     right: 20px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.9;
   }
   
   .latest-news {
     margin: 10vh 3% 20px;
   }
 
-  .latest-news > div {
+  .latest-news > div:nth-of-type(2) {
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
   }
@@ -1173,6 +1209,16 @@ nav ul a {
 
   .funding-item:last-of-type {
     display: block;
+  }
+
+  .funding {
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+  }
+
+  .latest-news {
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   .sections {
