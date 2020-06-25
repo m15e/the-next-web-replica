@@ -1,63 +1,37 @@
-# Smashing Magazine Replica
+# The Next Web Replica
 
-> One paragraph statement about the project.
+> A clone of the TNW homepage.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./assets/tnw_screenshot.png)
 
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages,
-- frameworks,
-- technologies used
+A project to practice HTML, CSS and responsive design.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://condescending-saha-4e8669.netlify.app/)
 
+## Built With
+
+- HTML5
+- CSS3
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Clone the project in to your computer using `git clone https://github.com/m15e/the-next-web-replica.git` 
+- `cd` into the `the-next-web-replica` folder
+- Open `index.html` in the browser
 
 ## Authors
 
-👤 **Author1**
+:bust_in_silhouette: **Dejazmach Molla**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@DejazmachMolla](https://github.com/DejazmachMolla)
+- Twitter: [@DJATSS](https://twitter.com/DJATSS)
+- Linkedin: [Dejazmach Molla](https://www.linkedin.com/in/dejazmach-getachew-027aabaa/)
 
-👤 **Author2**
+:bust_in_silhouette: **Mark Rode**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
+- Github: [@m15e](https://github.com/m15e)
 
 ## Show your support
 
@@ -65,9 +39,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- [https://thenextweb.com/](https://thenextweb.com/)
 
 ## 📝 License
 
